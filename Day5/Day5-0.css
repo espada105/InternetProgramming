@@ -1,0 +1,14 @@
+h2{
+    color: green;
+    background-color: #def;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 10vh;
+    font-style: italic;
+    color:#209134;
+    background-color: #85b58e;
+    width: 300px;
+}
