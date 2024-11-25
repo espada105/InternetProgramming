@@ -1,0 +1,25 @@
+<script>
+    function compareNumbers() {
+        let a = document.getElementById("inputA").value;
+        let b = document.getElementById("inputB").value;
+        
+        a = Number(a);
+        b = Number(b);
+        
+        if (isNaN(a) || isNaN(b)) {
+            document.getElementById('result').innerText = "숫자를 올바르게 입력해주세요.";
+            return;
+        }
+        
+        a += 100;
+        b *= 10; 
+
+        if (a > b) {
+            document.getElementById('result').innerText = "A에 100을 더한 것이 B에 10을 곱한 것보다 큽니다.";
+        } else if (a < b) {
+            document.getElementById('result').innerText = "A에 100을 더한 것이 B에 10을 곱한 것보다 작습니다.";
+        } else {
+            document.getElementById('result').innerText = "A에 100을 더한 것이 B에 10을 곱한 것과 같습니다.";
+        }
+    }
+</script>
